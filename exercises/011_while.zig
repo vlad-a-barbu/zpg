@@ -21,12 +21,12 @@ pub fn main() void {
     var n: u32 = 2;
 
     // Please use a condition that is true UNTIL "n" reaches 1024:
-    while (???) {
+    while (n < 1024) : (n *= 2) {
         // Print the current number
         std.debug.print("{} ", .{n});
-
+        continue;
         // Set n to n multiplied by 2
-        n *= 2;
+        //n *= 2;
     }
 
     // Once the above is correct, this will print "n=1024"
